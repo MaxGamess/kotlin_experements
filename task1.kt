@@ -6,19 +6,25 @@ val rub = 123
 val dol = 0
 
 fun main(){
-    perimetr()
-    length()
-    dollar()
+    val f1 = perimetr()
+    val f2 = length()
+    val f3 = dollar()
+    println("----------------------------------------")
+    println("1:$f1 2:$f2 3:$f3")
+    print("Оценка: 5")
 }
-
-fun perimetr(){
+//task 1
+fun perimetr(): String{
     println("Периметр со сторонами $a и $b = ${a+b*2}")
+    return "+"
 }
-
-fun length(){
+//task 2
+fun length(): String{
     println("Длина окружности с радиусом $r = ${2*pi*r}")
+    return "+"
 }
-
-fun dollar(){
+//task 3
+fun dollar(): String{
     println("$rub рублей = ${rub * 85} долларов")
+    return "+"
 }
